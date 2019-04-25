@@ -7,4 +7,4 @@ some note
 
 [控制台颜色](./ConsoleColor/控制台颜色.md)    
 [Bash](./Bash/bash.md)   
-[TypeScript](./TypeScript.md)  
+[TypeScript](./TypeScript/TypeScript.md)  
