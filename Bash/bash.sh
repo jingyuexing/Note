@@ -1,7 +1,7 @@
 # @Author: Jingyuexing
 # @Date:   2019-04-23 22:55:54
 # @Last Modified by:   Jingyuexing
-# @Last Modified time: 2019-04-25 16:50:48
+# @Last Modified time: 2019-04-25 17:43:16
 
 arry=(
 	"你好"
@@ -30,3 +30,17 @@ function usage(){
 	echo "this file name ${0}"
 }
 usage
+
+a=20
+b=10
+if [[ $a -eq $b ]]; then
+    #statements
+    echo "a is b"
+else
+    echo "a not is b"
+fi
+if [[ $a -ne $b ]]; then
+    echo "a not is b-----"
+else
+    echo "a is b-------" 
+fi
