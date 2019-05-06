@@ -14,4 +14,4 @@ some note
 * [Bash](./Bash/bash.md)    
 * [Chuck](./Chuck/chuck.md)     
 * [TypeScript](./TypeScript/TypeScript.md)     
-* [正则](./regex/正则.md)
+* [正则](./regex/正则.md)    
