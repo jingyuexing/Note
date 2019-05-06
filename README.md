@@ -13,5 +13,6 @@ some note
 * [Ada](./Ada/Ada.md)    
 * [Bash](./Bash/bash.md)    
 * [Chuck](./Chuck/chuck.md)     
-* [TypeScript](./TypeScript/TypeScript.md)     
-* [正则](./regex/正则.md)    
+* [TypeScript](./TypeScript/TypeScript.md)  
+* [JavaScript](./JavaScript/)    
+* [正则](./regex/正则.md)   
