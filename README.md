@@ -15,4 +15,5 @@ some note
 * [Chuck](./Chuck/chuck.md)     
 * [TypeScript](./TypeScript/TypeScript.md)  
 * [JavaScript](./JavaScript/JavaScript.md)    
+* [概念](./concept/concept.md)
 * [正则](./regex/正则.md)   
