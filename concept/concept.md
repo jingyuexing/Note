@@ -7,3 +7,4 @@
 * [GFC](./gfc.md)
 * [FFC](./ffc.md)
 * [Ajax](./ajax.md)
+* [XSS&CSRF](https://github.com/dwqs/blog/issues/68)
