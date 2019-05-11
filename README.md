@@ -9,11 +9,18 @@ some note
 
 ---
 
+* [汇编](./Assembler/assembler.md)
 * [控制台颜色](./ConsoleColor/控制台颜色.md)    
+* [powershell](./powershell/powershell.md)
+* [汇编](./Assembler/assembler.md)
+* [less](./Less/less.md)
+* [SASS](./SASS/sass.md)
 * [Ada](./Ada/Ada.md)    
 * [Bash](./Bash/bash.md)    
 * [Chuck](./Chuck/chuck.md)     
 * [PHP](./PHP/PHP.md)
+* [Django](./Django/Django.md)
+* [Flask](./Flask/Flask.md)
 * [TypeScript](./TypeScript/TypeScript.md)  
 * [数学](./Math/Math.md)
 * [JavaScript](./JavaScript/JavaScript.md)    
