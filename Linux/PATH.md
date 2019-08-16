@@ -133,25 +133,25 @@ x的文件没有集成到系统中。xwindow系统是一个功能强大的图形
 
 #### Linux内核子目录结构
 
----
+----
 
-a.arch：与体系结构相关的代码，对于每个架构的CPU，arch目录下有一个对应的子目录，比如arch/arm、arch/i386等。
-b.Kernel：内核管理的核心代码，与处理器相关的代码位于arch/*/kernel/目录下。
-c.drivers：所有的设备驱动程序，里面每一个子目录对应一类驱动程序。
-d.fs：Linux支持的文件系统的代码，每个子目录对应一种文件系统。（如果要自行添加文件系统驱动程序，一般都放置在本目录下）
-e.include：内核头文件，有基本头文件（include/linux/）、各种驱动或功能部件的头文件（include/media/、include/mtd/、include/net/）、各种体系相关的头文件（include/asm-arm/、include/asm-i386/等）。
-f.init：内核的初始化代码（不是系统的启动代码），其中的main.c文件中的strat_kernel函数是内核引导后运行的第一个函数。
-g.lib：内核用到的一些库函数代码，与处理器相关的库函数代码位于arch/*/lib/目录下。
+a.arch：与体系结构相关的代码，对于每个架构的CPU，arch目录下有一个对应的子目录，比如arch/arm、arch/i386等。    
+b.Kernel：内核管理的核心代码，与处理器相关的代码位于arch/*/kernel/目录下。    
+c.drivers：所有的设备驱动程序，里面每一个子目录对应一类驱动程序。    
+d.fs：Linux支持的文件系统的代码，每个子目录对应一种文件系统。（如果要自行添加文件系统驱动程序，一般都放置在本目录下）    
+e.include：内核头文件，有基本头文件（include/linux/）、各种驱动或功能部件的头文件（include/media/、include/mtd/、include/net/）、各种体系相关的头文件（include/asm-arm/、include/asm-i386/等）。    
+f.init：内核的初始化代码（不是系统的启动代码），其中的main.c文件中的strat_kernel函数是内核引导后运行的第一个函数。    
+g.lib：内核用到的一些库函数代码，与处理器相关的库函数代码位于arch/*/lib/目录下。    
 h.usr：用来制作一个
-i. crypto：常用加密和散列算法，还有一些压缩和CRC校验算法。
-j. block：块设备的通用函数。
-k. mm：内存管理代码，与处理器相关的内存管理代码位于arch/*/mm/目录下。
-l. net：网络支持代码，每个子目录对应于网络的一个方面。
-m. security：安全、密钥相关的代码。
-n. sound：音频设备的驱动程序。
-o. ipc：进程间通信的代码。
-p. Documentation：内核文档。
-r. scripts：用于配置、编译内核的脚本文件。
+i. crypto：常用加密和散列算法，还有一些压缩和CRC校验算法。    
+j. block：块设备的通用函数。    
+k. mm：内存管理代码，与处理器相关的内存管理代码位于arch/*/mm/目录下。    
+l. net：网络支持代码，每个子目录对应于网络的一个方面。    
+m. security：安全、密钥相关的代码。    
+n. sound：音频设备的驱动程序。    
+o. ipc：进程间通信的代码。    
+p. Documentation：内核文档。    
+r. scripts：用于配置、编译内核的脚本文件。    
 
 ---
 
