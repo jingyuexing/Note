@@ -1,0 +1,1 @@
+[Linux文件夹意义](http://blog.chinaunix.net/uid-22018363-id-407691.html)
