@@ -12,7 +12,7 @@ some note
 * [汇编](./Assembler/assembler.md)
 * [控制台颜色](./ConsoleColor/控制台颜色.md)    
 * [powershell](./powershell/powershell.md)
-* [汇编](./Assembler/assembler.md)
+* [Emoji表情](./GithubEmoji/emoji.md)
 * [less](./Less/less.md)
 * [SASS](./SASS/sass.md)
 * [Ada](./Ada/Ada.md)    
