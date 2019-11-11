@@ -19,6 +19,8 @@ some note
 * [Bash](./Bash/bash.md)    
 * [Chuck](./Chuck/chuck.md)     
 * [PHP](./PHP/PHP.md)
+* [go](./golang/golang.md)
+* [python](./python/python.md)
 * [Django](./Django/Django.md)
 * [Flask](./Flask/Flask.md)
 * [TypeScript](./TypeScript/TypeScript.md)  
