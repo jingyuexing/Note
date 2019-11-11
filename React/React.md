@@ -25,4 +25,3 @@
 当渲染过程，生命周期，或子组件的构造函数中抛出错误时，会调用如下方法：
 * `static getDerivedStateFromError()`
 * `componentDidCatch()`
-
