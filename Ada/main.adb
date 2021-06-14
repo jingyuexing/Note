@@ -1,4 +1,3 @@
-
 with Ada.Text_IO
 
 procedure main is
