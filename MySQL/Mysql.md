@@ -245,11 +245,11 @@ create table <tablename> as select * from <tableName>;
 ```
 
 约束:
- `not null` 非空约束
- `primary key` 主键约束
- `forigen key` 外键约束
- `default <value>` 默认约束
- `unique key` 唯一约束
+- `not null` 非空约束
+- `primary key` 主键约束
+- `forigen key` 外键约束
+- `default <value>` 默认约束
+- `unique key` 唯一约束
 
 
 ```sql
