@@ -373,3 +373,42 @@ call my_proc_(1,3,@results);  -- 调用
 select @results;
 ```
 
+# 事务
+
+## 事务必须满足的四个条件
+
+- 原子性(atomicity)
+- 一致性(consistency)
+- 隔离性(isolation)
+- 持久性(durability)
+
+## 控制事务
+
+- rollback 回滚事务
+- commit 提交事务
+- savepoint identifier 
+- rollback to identifier 
+
+
+
+```sql
+begin; -- 开始事务
+    insert into test value(1,"test01");
+    insert into test value(1,"test02");
+commit; -- 提交事务
+
+-- -----------------------------
+begin; #开始事务
+    insert into test value(1,"test01");
+    insert into test value(1,"test02");
+rollback; #回滚事务
+
+###################################
+begin; #开始事务
+    insert into test value(1,"test01");
+    savepoint tag1;
+    insert into test value(2,"test02");
+    savepoint tag2;
+    insert into test value(3,"test03");
+rollback to tag2; #回滚事务 回滚到 savepoint tag2处
+```
