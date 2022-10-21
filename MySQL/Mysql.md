@@ -529,3 +529,7 @@ mysql -u user -p <databasename> < /your/path/<specifiedname>.sql
 use book;
 source /your/path/<specifiedname>.sql
 ```
+导出记录
+```cmd
+mysql -u root -p --execute="select * from <tablename>" <database> > /your/path/<specifiedname>.sql
+```
