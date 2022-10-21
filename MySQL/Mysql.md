@@ -412,3 +412,109 @@ begin; #开始事务
     insert into test value(3,"test03");
 rollback to tag2; #回滚事务 回滚到 savepoint tag2处
 ```
+```sql
+set autocommit=0 # 禁止自动提交
+set autocommit=1 # 开启自动提交
+```
+
+```sql
+show engines; # 查看mysql的引擎
+```
+
+```sql
+alter table <tablename> engine=innodb; # 设置数据表的引擎
+set storage_engine=innodb; # 设置存储引擎为innodb 
+# 在创表语句后添加 engine=<engineName>
+```
+
+# 各数据表功能
+
+## 权限表
+
+- tables_priv 
+- columns_priv
+- proc_priv 对存储过程和存储函数
+
+创建用户
+```sql
+create user '<user>'@'<host>' identified by "<password>";
+create user '<user>'@'<host>' identified by password("<password>");
+```
+
+设置账户权限
+```sql
+grant select,update,delete,insert on <database>.<tabname>[*] to "<user>"@"<host>"; # 设置增删改查权限给指定的用户
+grant all privileges ; # 设置所有权限
+```
+```sql
+flush privileges; # 刷新权限
+```
+
+删除用户
+```sql
+drop user "<user>"@"<host>";
+```
+使用delete删除用户记录
+
+```sql
+delete from mysql.user where user="<username>" and password="<password>";
+```
+
+查看对应用户的权限
+
+```sql
+show grants for "<user>"@"<host>";
+```
+
+撤销用户的权限
+```sql
+revoke [all privileges|insert|delete|update] on <database>.<tabname> from "<user>"@"<host>";
+```
+
+```sql
+
+# example
+CREATE USER "rose"@"localhost" IDENTIFIED by "password";
+GRANT all PRIVILEGES on test.* to "rose"@"localhost";
+REVOKE DELETE on test.*  from  "rose"@"localhost";
+FLUSH PRIVILEGES;
+show grants for "rose"@"localhost";
+```
+
+
+# 日志
+
+- 错误日志
+- 查询日志
+- 二进制日志
+- 慢查询日志 (超过long_query_time的日志)
+
+通过sql查看错误日志文件
+```sql
+show variables like "log_error";
+```
+
+```bat
+: 刷新日志
+mysqladmin -uroot -p flush-logs  
+```
+进入mysql刷新日志
+```mysql
+flush logs;
+```
+
+# 数据的备份与恢复
+
+```bat
+mysqldump -uroot -p book <database>  [<tablename>] > /your/path/<specifiedname>.sql
+```
+
+备份多个数据库 (添加`--databases`参数)
+```bat
+mysqldump -uroot -p --databases <database> <database2> > /your/path/<specifiedname>.sql
+```
+
+备份所有的数据库(添加`--all-databases`参数)
+```cmd
+mysqldump -uroot -p --all-databases > /your/path/<specifiedname>.sql
+```
