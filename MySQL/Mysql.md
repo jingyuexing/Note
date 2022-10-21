@@ -518,3 +518,14 @@ mysqldump -uroot -p --databases <database> <database2> > /your/path/<specifiedna
 ```cmd
 mysqldump -uroot -p --all-databases > /your/path/<specifiedname>.sql
 ```
+
+使用sql恢复数据库
+```cmd
+mysql -u user -p <databasename> < /your/path/<specifiedname>.sql
+```
+
+使用sql语句进行恢复
+```sql
+use book;
+source /your/path/<specifiedname>.sql
+```
