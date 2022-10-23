@@ -33,6 +33,19 @@ alter database <databaseName> character set <characterset>;
 ```
 
 ```sql
+select * from <tablename> limit 3 offset 1;
+-- 可以简写为如下方式
+select * from <tablename> limit 1,3;
+
+```
+
+```sql
+asc -- 升序 从小到大
+desc -- 降序 从大到小
+```
+
+
+```sql
 drop database <databaseName> 
 ```
 
@@ -108,6 +121,16 @@ alter table <tablename> auto_increment=6;
 删除指定的列
 ```sql
 alter table <tableName> modify <column> <column_type>;
+```
+
+```sql
+给已经创建完成的表添加外键
+alter table <tablename> add foreign key(column) references <tableName2>(column2);
+-- column 为当前的表,table2则是需要关联的另外的一张表以及他的字段
+```
+再创表时给表增加外键
+```sql
+references <tableName2>(column2);
 ```
 
 ```sql
@@ -300,6 +323,8 @@ create function if not exists level(m int) returns varchar(20)
     end;
 ```
 
+### when……case 语句
+
 ```sql
 CREATE FUNCTION `mylevel`(m VARCHAR(30)) RETURNS varchar(20) CHARSET latin1
 begin
@@ -319,7 +344,7 @@ begin
         return results;
     end
 ```
-
+### loop语句
 
 ```sql
 create function sum(n int) returns int
@@ -329,6 +354,10 @@ begin
          leave label;
         end if;
 end;
+```
+
+```sql
+
 ```
 
 删除函数
